@@ -1,0 +1,72 @@
+---
+
+# **CTF Report: Beginner-Level Capture The Flag Challenge**
+
+---
+
+## **Event Overview**
+- **Event Name**: Beginner-Level Capture The Flag (CTF) Challenge  
+- **Organizer**: Accorian  
+- **Date**: May 7, 2024  
+- **Achievement**: **1st Place Winner** among 100+ participants  
+
+---
+
+## **Introduction**
+The Beginner-Level CTF Challenge hosted by Accorian on May 7, 2024, marked my first-ever participation in a Capture The Flag competition. This event provided an excellent platform to explore cybersecurity fundamentals, covering areas such as web exploitation and steganography.  
+
+This report was compiled months after the event, leveraging my recollection, notes, and feedback from discussions with the event hosts. These inputs helped refine the details of my approach, highlighting the importance of documenting challenges and solutions accurately. This experience has inspired me to participate in more CTFs and improve both my technical and reporting skills.  
+
+---
+
+## **Challenge Summaries**
+
+### **Challenge 1: Hidden Button and Steganography**
+- **Category**: Web Exploitation, Steganography  
+- **Objective**: Retrieve a hidden flag embedded in an audio file.  
+
+#### **Approach & Solution**  
+1. **Initial Reconnaissance**: Using browser developer tools, I inspected the HTML source code and discovered a hidden black button.  
+2. **Secret Page Access**: Clicking the button led to a page containing multimedia files, including an audio file.  
+3. **Steganographic Analysis**: I explored various files on the page. Focusing on the audio file and applying steganography tools revealed an embedded string, which served as the **first flag**.  
+
+#### **Tools & Techniques Used**
+- **Browser Developer Tools**: For locating hidden elements in the HTML.  
+- **Steganographic Tools**: [Audacity, Steghide] to analyze and extract data from the audio file.  
+
+---
+
+### **Challenge 2: Web Crawling and Database Exploration**
+- **Category**: Web Crawling, Database Traversal  
+- **Objective**: Discover and decode a flag by analyzing `robots.txt` and database entries.  
+
+#### **Approach & Solution**  
+1. **`robots.txt` Analysis**: Examining the file revealed a restricted endpoint leading to a local XAMPP server on port 8080.  
+2. **Exploring Localhost Server**: The server directory contained database files listing user credentials.  
+3. **Flag Identification**: A hint referencing the user "Dwight" guided me to locate and decode the base64-encoded password, revealing the **second flag**.  
+
+#### **Tools & Techniques Used**
+- **Browser Developer Tools**: For inspecting and analyzing `robots.txt`.  
+- **Base64 Decoder**: For decoding encoded credentials to extract the flag.  
+
+---
+
+## **Key Takeaways**
+### **Technical Skills Acquired**
+- **Steganography**: Practical application in extracting hidden data from multimedia files.  
+- **Web Exploitation**: Leveraging techniques like `robots.txt` analysis and database traversal.  
+- **Encoding and Decoding**: Using base64 decoding to retrieve hidden information.  
+
+### **Lessons Learned**
+- **Documentation**: Revisiting this event months later highlighted the value of detailed and timely reporting. It ensures accuracy and preserves key insights for future reference.  
+- **Problem-Solving**: Each challenge required creativity, technical expertise, and adaptability to overcome obstacles.  
+- **Attention to Detail**: Success depended on recognizing subtle clues and analyzing hidden elements thoroughly.  
+
+---
+
+## **Conclusion**
+Securing **1st place** in my first-ever CTF was a milestone achievement, providing hands-on exposure to cybersecurity principles and techniques. This experience has fueled my passion for cybersecurity, motivating me to participate in more competitions and improve my documentation skills for future reports.  
+
+As I continue to grow, I aim to enhance my understanding of web exploitation, steganography, and database security, while sharing my learnings with the broader cybersecurity community.  
+
+
